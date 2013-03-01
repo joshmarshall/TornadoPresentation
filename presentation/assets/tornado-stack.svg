@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="tornado-stack.svg">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       id="filter5156"
+       x="-0.069770762"
+       width="1.1395415"
+       y="-0.34248539"
+       height="1.6849708">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5158" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5160">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5162" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5164"
+       x="-0.07974708"
+       width="1.1594942"
+       y="-0.38739492"
+       height="1.7747898">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5166" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5168">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5170" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5172"
+       x="-0.056095026"
+       width="1.1121901"
+       y="-0.44622105"
+       height="1.8924421">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5174" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5176">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5178" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5180"
+       x="-0.067184629"
+       width="1.1343693"
+       y="-0.37852636"
+       height="1.7570527">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5182" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5184">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5186" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5196"
+       x="-0.067456189"
+       width="1.1349124"
+       y="-0.46046054"
+       height="1.9209211">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5198" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5200">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5202" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5204"
+       x="-0.063783593"
+       width="1.1275672"
+       y="-0.50313116"
+       height="2.0062623">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5206" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5208">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5210" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5212"
+       x="-0.068392892"
+       width="1.1367858"
+       y="-0.41590895"
+       height="1.8318179">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5214" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5216">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5218" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5220"
+       x="-0.089446442"
+       width="1.1788929"
+       y="-0.3363559"
+       height="1.6727118">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5222" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5224">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5226" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5228"
+       x="-0.10574143"
+       width="1.2114829"
+       y="-0.38063566"
+       height="1.7612713">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5230" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5232">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5234" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5236"
+       x="-0.088987355"
+       width="1.1779747"
+       y="-0.31290549"
+       height="1.625811">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5238" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5240">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5242" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5244"
+       x="-0.12702176"
+       width="1.2540435"
+       y="-0.31290549"
+       height="1.625811">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5246" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5248">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.58906302"
+         id="feGaussianBlur5250" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="324.01407"
+     inkscape:cy="771.72792"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1598"
+     inkscape:window-height="881"
+     inkscape:window-x="0"
+     inkscape:window-y="17"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true">
+    <rect
+       style="opacity:0.82589285;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.29999995;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2985"
+       width="771.42859"
+       height="1062.8572"
+       x="-20"
+       y="-4.7806745" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer">
+    <rect
+       style="opacity:0.10000000000000001;color:#000000;fill:#a0410d;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;filter:url(#filter5248)"
+       id="rect2988"
+       width="40.061607"
+       height="15.2923"
+       x="291.14249"
+       y="314.17953"
+       ry="1.8511733"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.70149993999999971px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Sans Bold;opacity:0.10000000000000001;filter:url(#filter5244)"
+       x="306.48074"
+       y="323.03195"
+       id="text3758"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999"><tspan
+         sodipodi:role="line"
+         id="tspan3760"
+         x="306.48074"
+         y="323.03195">epoll</tspan></text>
+    <rect
+       style="opacity:0.10000000000000001;color:#000000;fill:#aba000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;filter:url(#filter5240)"
+       id="rect2988-3"
+       width="40.061607"
+       height="15.2923"
+       x="332.46918"
+       y="314.17953"
+       ry="1.8511733"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.70149993999999971px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Sans Bold;opacity:0.10000000000000001;filter:url(#filter5236)"
+       x="344.34125"
+       y="323.03195"
+       id="text3758-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999"><tspan
+         sodipodi:role="line"
+         id="tspan3760-7"
+         x="344.34125"
+         y="323.03195">kqueue</tspan></text>
+    <rect
+       style="opacity:0.10000000000000001;color:#000000;fill:#1a7b30;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;filter:url(#filter5232)"
+       id="rect2988-0"
+       width="40.061607"
+       height="15.2923"
+       x="373.7959"
+       y="314.17953"
+       ry="1.8511733"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.70149993999999971px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Sans Bold;opacity:0.10000000000000001;filter:url(#filter5228)"
+       x="386.70898"
+       y="323.03195"
+       id="text3758-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999"><tspan
+         sodipodi:role="line"
+         id="tspan3760-75"
+         x="386.70898"
+         y="323.03195">select</tspan></text>
+    <rect
+       style="opacity:0.10000000000000001;color:#000000;fill:#00746b;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;filter:url(#filter5224)"
+       id="rect2988-3-6"
+       width="122.97729"
+       height="15.2923"
+       x="291.01135"
+       y="297.95358"
+       ry="1.8511733"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.70149993999999971px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Sans Bold;opacity:0.10000000000000001;filter:url(#filter5220)"
+       x="344.11197"
+       y="306.6413"
+       id="text3758-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999"><tspan
+         sodipodi:role="line"
+         id="tspan3760-2"
+         x="344.11197"
+         y="306.6413">IOLoop</tspan></text>
+    <rect
+       style="opacity:0.10000000000000001;color:#000000;fill:#004b80;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;filter:url(#filter5216)"
+       id="rect2988-3-6-9"
+       width="122.97729"
+       height="15.2923"
+       x="291.01135"
+       y="281.72766"
+       ry="1.8511733"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.70149993999999971px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Sans Bold;opacity:0.10000000000000001;filter:url(#filter5212)"
+       x="341.53644"
+       y="290.41534"
+       id="text3758-5-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999"><tspan
+         sodipodi:role="line"
+         id="tspan3760-2-8"
+         x="341.53644"
+         y="290.41534">IOStream</tspan></text>
+    <rect
+       style="opacity:0.10000000000000001;color:#000000;fill:#1b1464;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;filter:url(#filter5208)"
+       id="rect2988-6"
+       width="40.061607"
+       height="15.2923"
+       x="291.14249"
+       y="265.50171"
+       ry="1.8511733"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88645363000000010px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Sans Bold;opacity:0.10000000000000001;filter:url(#filter5204)"
+       x="300.91708"
+       y="274.04361"
+       id="text3758-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999"><tspan
+         sodipodi:role="line"
+         id="tspan3760-8"
+         x="300.91708"
+         y="274.04361">HTTPServer</tspan></text>
+    <rect
+       style="opacity:0.10000000000000001;color:#000000;fill:#630460;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;filter:url(#filter5200)"
+       id="rect2988-3-9"
+       width="40.061607"
+       height="24.162163"
+       x="332.46918"
+       y="256.63187"
+       ry="1.7980951"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88645363000000010px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Sans Bold;opacity:0.10000000000000001;filter:url(#filter5196)"
+       x="341.3429"
+       y="269.5686"
+       id="text3758-1-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999"><tspan
+         sodipodi:role="line"
+         id="tspan3760-7-5"
+         x="341.3429"
+         y="269.5686">HTTPClient</tspan></text>
+    <rect
+       style="opacity:1;color:#000000;fill:#9e0039;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2988-0-6"
+       width="40.061607"
+       height="47.938309"
+       x="373.7959"
+       y="232.85571"
+       ry="2.2278976"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88645363000000010px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Sans Bold;opacity:1"
+       x="394.23953"
+       y="254.92117"
+       id="text3758-9-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999"><tspan
+         sodipodi:role="line"
+         x="394.23953"
+         y="254.92117"
+         style="text-align:center;text-anchor:middle"
+         id="tspan4173">Database,</tspan><tspan
+         sodipodi:role="line"
+         x="394.23953"
+         y="259.77924"
+         id="tspan4171"
+         style="text-align:center;text-anchor:middle">TCP Services,</tspan><tspan
+         sodipodi:role="line"
+         x="394.23953"
+         y="264.6373"
+         style="text-align:center;text-anchor:middle"
+         id="tspan4175">etc.</tspan></text>
+    <rect
+       style="opacity:0.10000000000000001;color:#000000;fill:#9e0b0f;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;filter:url(#filter5184)"
+       id="rect2988-6-7"
+       width="40.061607"
+       height="15.2923"
+       x="291.14249"
+       y="249.27579"
+       ry="1.8511733"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88645363000000010px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Sans Bold;opacity:0.10000000000000001;filter:url(#filter5180)"
+       x="300.75613"
+       y="257.81769"
+       id="text3758-2-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999"><tspan
+         sodipodi:role="line"
+         id="tspan3760-8-6"
+         x="300.75613"
+         y="257.81769">Application</tspan></text>
+    <rect
+       style="opacity:0.10000000000000001;color:#000000;fill:#9e0b0f;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;filter:url(#filter5176)"
+       id="rect2988-6-7-9"
+       width="40.061607"
+       height="15.2923"
+       x="291.14249"
+       y="233.04984"
+       ry="1.8511733"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.29685283000000018px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Sans Bold;opacity:0.10000000000000001;filter:url(#filter5172)"
+       x="299.03262"
+       y="241.41751"
+       id="text3758-2-4-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999"><tspan
+         sodipodi:role="line"
+         id="tspan3760-8-6-4"
+         x="299.03262"
+         y="241.41751">RequestHandler</tspan></text>
+    <rect
+       style="opacity:0.10000000000000001;color:#000000;fill:#598527;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;filter:url(#filter5168)"
+       id="rect2988-3-9-8"
+       width="40.061607"
+       height="22.624098"
+       x="332.46918"
+       y="233.04984"
+       ry="1.4509337"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88645363000000010px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Sans Bold;opacity:0.10000000000000001;filter:url(#filter5164)"
+       x="342.69507"
+       y="244.77899"
+       id="text3758-1-9-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999"><tspan
+         sodipodi:role="line"
+         id="tspan3760-7-5-7"
+         x="342.69507"
+         y="244.77899">Auth, etc.</tspan></text>
+    <rect
+       style="opacity:0.10000000000000001;color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.20000000000000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;filter:url(#filter5160)"
+       id="rect2988-3-6-9-7"
+       width="122.97729"
+       height="15.2923"
+       x="291.01135"
+       y="216.82391"
+       ry="1.8511733"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.70149993999999971px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Sans Bold;opacity:0.10000000000000001;filter:url(#filter5156)"
+       x="341.38708"
+       y="225.5116"
+       id="text3758-5-7-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/jmarshall/Presentations/AWPUG-20130228/presentation/images/tornado-stack-tcp.png"
+       inkscape:export-xdpi="292.23999"
+       inkscape:export-ydpi="292.23999"><tspan
+         sodipodi:role="line"
+         id="tspan3760-2-8-6"
+         x="341.38708"
+         y="225.5116">Your App</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,4 @@
+{% import requests %}
+{% autoescape None %}
+{# this is a comment... #}
+{{ requests.get("http://www.google.com").text }}

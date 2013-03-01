@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="overwrite.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+          <h1>Tornado</h1>
+          <h3 class="inverted">A Whirlwind Presentation</h3>
+				</section>
+
+        <section>
+          <h2>Me</h2>
+          <ul>
+            <li class="fragment">I am (not) Jeremy Kelley.</li>
+            <li class="fragment">If I were actually Jeremy Kelley, I would work at Indeed and amaze you with my wit and knowledge.</li>
+            <li class="fragment">I would also have the flu.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>What is Tornado?</h1>
+          <h3>You know, non-meteorologically</h3>
+        </section>
+
+        <section>
+          <p>Tornado is a simple web framework...</p>
+          <p class="fragment">...around a fast HTTP server...</p>
+          <p class="fragment">...around a low-level event system.</p>
+        </section>
+
+        <section>
+          <p>It can be used for...</p>
+          <p class="fragment">...building web apps...</p>
+          <p class="fragment">...HTTP REST APIs...</p>
+          <p class="fragment">...authentication frameworks...</p>
+          <p class="fragment">...even custom TCP-based services.</p>
+        </section>
+
+        <section data-state="soothe">
+          <h3>The Zen of Tornado</h3>
+          <pre>
+            <code class="python">
+from tornado.web import Application, RequestHandler
+from tornado.ioloop import IOLoop
+
+
+class HomeHandler(RequestHandler):
+
+    def get(self):
+        self.set_header("Content-type", "text/plain")
+        self.write("Hello, world!")
+
+
+if __name__ == "__main__":
+    app = Application([("/", HomeHandler)])
+    app.listen(8080)
+    IOLoop.instance().start()
+            </code>
+          </pre>
+        </section>
+
+        <section data-state="alert">
+          <h2>Disclaimer</h2>
+          <p>I'm going to talk through how Tornado works.</p>
+          <p>This means some libraries you might not use.</p>
+          <p>Tornado is actually very simple.</p>
+        </section>
+
+        <section>
+          <h2>The Mighty Stack</h2>
+          <img src="images/tornado-stack-full.png"/>
+        </section>
+
+        <section>
+          <h2>Event Libraries</h2>
+          <img src="images/tornado-stack-event.png"/>
+        </section>
+
+        <section>
+          <p>Tornado selects the best library for your platform.</p>
+          <p>For Linux, this means <b>epoll</b>.</p>
+          <p>For Mac, this means <b>kqueue</b>.</p>
+          <p>For Windows, this means old / boring <b>select</b>.</p>
+          <p>These are not the codes you are looking for.</p>
+        </section>
+
+        <section>
+          <h2>IOLoop Library</h2>
+          <img src="images/tornado-stack-ioloop.png"/>
+        </section>
+
+        <section>
+          <p>The IOLoop abstracts those polling libraries away:</p>
+          <pre>
+            <code class="python">
+from tornado.ioloop import IOLoop
+ioloop = IOLoop.instance()
+
+# watch for events on a socket / file descriptor
+ioloop.add_handler(sock.fileno(), callback, ioloop.READ)
+
+# add a callback to run on the next "cycle"
+ioloop.add_callback(callback)
+
+# add a callback to run at (or after) a specific time
+ioloop.add_timeout(time.time() + 60, callback)
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h3>IOLoop.instance()</h3>
+          <p>Singletons -- great until they murder you</p>
+          <p>Use as default, but allow passing it in</p>
+          <pre>
+            <code class="python">
+class TCPServer(object):
+
+    def __init__(self, ioloop=None):
+        self._ioloop = ioloop or IOLoop.instance()
+
+    def send(self, message):
+      #...
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h3>ADD_CALLBACK / ADD_TIMEOUT</h3>
+          <p>All you need unless you're writing a TCP client / server.</p>
+          <p>Use these to split up blocking operations, defer tasks, etc.</p>
+          <pre>
+            <code class="python">
+# blocking operation...
+results = DB.slow_find()
+
+def parse_results(results):
+    for result in results:
+        # do something
+
+# let other things work for a while
+IOLoop.instance().add_callback(parse_results, results)
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h3>ADD_HANDLER, UPDATE_HANDLER, etc.</h3>
+          <p>If you ARE writing a server, you need to:</p>
+          <pre>
+            <code class="python">
+# add a callback for a file descriptor on certain events
+ioloop.add_handler(sock.fileno(), callback, ioloop.READ)
+
+# update for new events
+ioloop.update_handler(sock.fileno(), ioloop.WRITE)
+
+# remove file descriptors when finished
+ioloop.remove_handler(sock.fileno())
+            </code>
+          </pre>
+          <p>...but stayed tuned...</p>
+        </section>
+
+        <section>
+          <h2>IOStream Library</h2>
+          <img src="images/tornado-stack-iostream.png"/>
+        </section>
+
+        <section>
+          <p>IOStream wraps sockets:</p>
+          <pre>
+            <code class="python">
+ioloop = IOLoop.instance()
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+stream = IOStream(sock, io_loop=ioloop)
+
+stream.connect(("google.com", 80), connect_callback)
+stream.read_bytes(4096, read_callback)
+# etc...
+            </code>
+          </pre>
+        </section>
+
+
+        <section>
+          <p>It provides plenty of helpers:</p>
+          <pre>
+            <code class="python">
+# read until exact string match
+stream.read_until("\n\n", header_callback)
+# read until a regular expression is matched
+stream.read_until_regex("BYTES: \d+\s+", bytes_callback)
+# read until the socket closes -- optional streaming
+stream.read_until_close(finish_callback, streaming_callback)
+# write out to the socket
+stream.write("Foobar!", write_callback)
+# if a socket is closed, call a callback
+stream.set_close_callback(on_close)
+stream.closed() or stream.reading() or stream.writing()
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <p>Use IOStream when someone else hasn't done it already.</p>
+          <p>(For instance, your favorite new NoSQL database.)</p>
+          <p>Don't use IOStream for HTTP clients -- that's coming up.</p>
+        </section>
+
+        <section>
+          <h2>HTTPServer Library</h2>
+          <img src="images/tornado-stack-httpserver.png"/>
+        </section>
+
+        <section>
+          <p>HTTPServer is (generally) invisible.</p>
+          <p>It leverages IOStream, etc. to support HTTP/1.1.</p>
+          <p>Runs implicitly when Application.listen() is called.</p>
+          <p>You probably won't need to touch it, but it's there.</p>
+          <p>Uses HTTPRequest.</p>
+        </section>
+
+        <section>
+          <p>HTTPRequest is used heavily in the request handlers.</p>
+          <p>It wraps information / helpers for client connections:</p>
+          <pre>
+            <code class="python">
+request.body # the request body string, if present
+request.headers # dictionary of headers
+request.cookies # dictionary of cookies
+request.path # /foobar/path
+request.query # ?key=value
+request.remote_ip # actual request ip
+request.scheme # actual request scheme (http[s])
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Web Libraries</h2>
+          <img src="images/tornado-stack-web.png"/>
+        </section>
+
+        <section>
+          <p><code>tornado.web</code> contains the real meat of Tornado.</p>
+          <p>Most work (in web apps) is done here.</p>
+          <p>Encapsulates the "V" and "C" of "MVC"</p>
+        </section>
+
+        <section>
+          <h2>Request Handler</h2>
+          <pre>
+            <code class="python">
+from tornado.web import RequestHandler, Application
+
+class Controller(RequestHandler):
+    # regex groups in route passed to method
+    def get(self, username):
+        ip = self.request.remote_ip # request on handler
+        # tornado includes its own templating system
+        self.render(
+          "template.html", ip=ip, username=username)
+
+app = Application([
+  # routes are regex passed into Application
+  ("/(\w+)", Controller)
+])
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Template System</h2>
+          <pre>
+            <code class="html">
+{% extends "base.html" %}
+{% block content %}
+&#60;h1&#62;Hello, {{ username.uppercase() }}.&#60;/h1&#62;
+{# it's mostly just python. #}
+{% if ip == "127.0.0.1" %}
+&#60;p&#62;You must still be working on this.&#60;/p&#62;
+{% else %}
+&#60;p&#62;You are accessing us from {{ ip }}.&#60;/p&#62;
+{% end if %}
+{% end block %}
+
+{# You can even... #}
+{% import requests %}
+{{ requests.get("http://www.google.com").text }}
+{# ...but don't. That's really, really stupid. #}
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Template Module</h2>
+          <p>It has just enough for what you need...</p>
+          <p class="fragment">...with enough rope to hang yourself twice.</p>
+          <p class="fragment">So be smart.</p>
+        </section>
+
+        <section>
+          <h2>Application</h2>
+          <pre>
+            <code class="python">
+class Users(RequestHandler):
+    def post(self):
+        content = json.loads(self.request.body)
+        # application is available from the handler
+        id = self.application.settings["database"].save(content)
+        # a dictionary passed to write == JSON
+        self.write({
+          "id": "%s" % (id),
+          "name": content["name"]
+        })
+
+app = Application([("/users", Users)],
+    debug=True, # for automatic reloading
+    database=pymongo.Connection()["mydatabase"])
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>WSGI-Mode</h2>
+          <pre>
+            <code class="python">
+from tornado.wsgi import WSGIApplication
+app = WSGIApplication([("/", Handler)])
+# for giggles...
+server = gevent.pywsgi.WSGIServer(('', 8080), app)
+server.serve_forever()
+            </code>
+          </pre>
+          <p>Can't do Tornado's async stuff, though.</p>
+        </section>
+
+        <section class="stack">
+          <section>
+            <h2>Authentication</h2>
+            <pre>
+              <code class="python">
+  class BaseHandler(RequestHandler):
+
+      @property
+      def db(self):
+        return self.application.settings["db"]
+
+      def get_current_user(self):
+          token = self.get_secure_cookie("token")
+          user = self.db.users.find_one({"token": token})
+          return user or None
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <h2>Authentication</h2>
+            <pre>
+              <code class="python">
+  class LoginHandler(BaseHandler):
+
+      def post(self):
+          if self.current_user:
+              self.redirect("/dashboard")
+          username = self.get_argument("username")
+          password = self.get_argument("password")
+          user = self.db.find_one({"username": username})
+          if not user or user.password != password:
+              return self.redirect("/login")
+          self.set_secure_cookie("token", user.token)
+          self.redirect("/dashboard")
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <h2>Authentication</h2>
+            <pre>
+              <code class="python">
+  class Dashboard(BaseHandler):
+
+      @tornado.web.authenticated
+      def get(self):
+          self.render("dashboard.htm", user=self.current_user)
+              </code>
+            </pre>
+          </section>
+        </section>
+
+        <section>
+          <h2>Asynchronous</h2>
+          <pre>
+            <code class="python">
+class AsyncHandler(RequestHandler):
+
+    @tornado.web.asynchronous
+    def get(self):
+        service.fetch("/other/thing", callback=self._callback)
+        # request stays open...
+
+    def _callback(self, response):
+        if response:
+            self.write(response)
+        else:
+          raise HTTPError(500, "We couldn't find it.")
+        # without finish, the request never closes
+        self.finish()
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>And More</h2>
+          <p>There are lots of other helpers in the web stack.</p>
+          <p>(Websockets, error helpers, etc.)</p>
+          <p>Dig around in the documentation.</p>
+        </section>
+
+        <section>
+          <h2>HTTPClient</h2>
+          <img src="images/tornado-stack-httpclient.png"/>
+        </section>
+
+        <section>
+          <h2>Simple Usage</h2>
+          <pre>
+            <code class="python">
+from tornado.httpclient import AsyncHTTPClient
+
+def callback(response):
+    print response.code
+    print response.body
+
+client = AsyncHTTPClient()
+client.fetch("http://foo.com/some/resource", callback)
+            </code>
+          </pre>
+          </section>
+
+        <section>
+          <h2>More Involved</h2>
+          <pre>
+            <code class="python">
+def fetch_callback(response):
+    print response.headers
+    print response.body
+
+client = AsyncHTTPClient()
+client.fetch("https://foo.com/some/resource",
+    method="POST", body=json.dumps({"key": "value"}),
+    headers={"Content-type": "application/json"},
+    auth_username="foo", auth_password="bar",
+    validate_cert=False, callback=fetch_callback)
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <p>You'll probably use this a lot.</p>
+          <p>It's especially useful when used with auth.</p>
+          <p>(seeggwwaaayyy...)</p>
+        </section>
+
+        <section>
+          <h2>Auth Libraries</h2>
+          <img src="images/tornado-stack-auth.png"/>
+        </section>
+
+        <section>
+          <p>Tornado includes lots of third party auth.</p>
+          <p>This fits nicely with the async nature of Tornado.</p>
+          <p>Also, you can be lazy about your auth system.</p>
+        </section>
+
+        <section>
+          <pre>
+            <code class="python">
+from tornado.auth import TwitterMixin
+
+class TwitterAuthHandler(RequestHandler, TwitterMixin):
+    @tornado.web.asynchronous
+    def get(self):
+        if self.get_argument("oauth_token", None):
+            return self.get_authenticated_user(self._on_auth)
+        self.authorize_redirect()
+
+    def _on_auth(self, user):
+        if not user:
+            raise HTTPError(500, "Couldn't auth.")
+        user = self.db.create({"username": user["username"]})
+        self.set_secure_cookie("token", user.token)
+        self.redirect("/dashboard")
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>TCP-Based Libraries</h2>
+          <img src="images/tornado-stack-tcp.png"/>
+        </section>
+
+        <section>
+          <h2>Items of Interest</h2>
+          <p>Deployment</p>
+          <p>To Async or Not?</p>
+          <p>Testing</p>
+          <p>Libraries of Import</p>
+        </section>
+
+        <section>
+          <h2>Questions?</h2>
+          <p class="fragment">@joshmarshall on the Twitters.</p>
+          <p class="fragment">@joshmarshall on the GitHub.</p>
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+    </script>
+
+    <script type="text/javascript" src="control.js"></script>
+
+	</body>
+</html>
